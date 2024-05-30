@@ -1,0 +1,23 @@
+#Port Setting
+server:
+  port: 8080
+  
+#JSP Setting
+spring:
+#MySql Setting
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bit701?serverTimezone=Asia/Seoul
+    username: root
+    password: 1234
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://db-n8650-kr.vpc-pub-cdb.ntruss.com:3306/studydb?serverTimezone=Asia/Seoul
+#    username: study
+#    password: bitcamp!@#123
+
+#Mybatis Setting
+mybatis:
+  type-aliases-package: data.dto
+  mapper-locations: 
+  - /mapper/**/*.xml
