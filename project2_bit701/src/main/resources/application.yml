@@ -7,7 +7,7 @@ spring:
 #MySql Setting
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/bit701?serverTimezone=Asia/Seoul
+    url: jdbc:mysql://localhost:3306/project_2?serverTimezone=Asia/Seoul
     username: root
     password: 1234
 #  datasource:
