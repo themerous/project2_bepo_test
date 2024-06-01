@@ -1,0 +1,50 @@
+body {
+    font-family: 'Jua';
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    position: relative;
+    margin: 0 auto;
+    padding: 10px 0;
+    max-width: 900px;
+    min-width: 480px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+/* Tiles Header에 관련된 CSS */
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tiles Menu에 관련된 CSS */
+.menu-bar {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.menu-bar-content {
+    width: 20%;
+    height: 50px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
