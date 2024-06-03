@@ -27,4 +27,5 @@
 			<tiles:insertAttribute name="footer" />
 		</footer>
 	</body>
+	<script src="/js/action.js"></script>
 </html>
