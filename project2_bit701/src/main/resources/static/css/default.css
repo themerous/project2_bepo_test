@@ -40,7 +40,7 @@ header {
     width: 100%;
 }
 .menu-bar-content {
-    width: 20%;
+    width: 33%;
     height: 50px;
     margin: 0;
     display: flex;
@@ -52,11 +52,11 @@ header {
  /* Tiles Main에 관련된 CSS */
 
  /* Tiles Footer에 관련된 CSS */
- footer {
+footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 200px;
-    background-color: rgba(200, 200, 200, 1);
- }
+    background-color: rgb(109, 37, 37);
+}
