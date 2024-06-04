@@ -16,6 +16,6 @@
 		</div>
 	</div>
 	<div class="menu-bar-content">
-		<a class="menu-bar-link">예 약 정 보</a>
+		<a class="menu-bar-link" href="/reserve/check_reservatioin">예 약 정 보</a>
 	</div>
 </div>
