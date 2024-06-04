@@ -4,7 +4,6 @@ body {
     width: 100%;
     height: 100%;
     margin: 0;
-	color: white;
 }
 
 * {
@@ -194,35 +193,96 @@ input::placeholder {
     width: fit-content;
     margin-top: 300px;
 }
+
+/* check-reserveation.jsp */
+
 .check-reserve-container {
-    display: grid;
-    grid-template-columns: 300px 100px 100px;
-    grid-template-rows: 300px 150px 150px;
-    grid-gap: 10px;
-    padding: 50px;
-    grid-template-areas:
-                "r1 r2 r3"
-                "r1 r2 r3"
-                "r1 x x";
+    width: 850px;
+    margin: 180px auto;
 }
-.check-reserve-item {
-    background-color: lightblue;
-    padding: 20px;
-    border: 1px solid #333;
-    text-align: center;
+.check-reserve-top {
+    margin-bottom: 50px;
+    color: saddlebrown;
 }
-.r1 {
-    grid-area: r1;
-    background-color: #d4af7a;
+.check-reserve-bold {
+    font-weight: bold;
 }
-.r2 {
-    grid-area: r2;
-    background-color: green;
+.check-reserve-middle-1 {
+    display: flex;
 }
-.r3{
-    grid-area: r3;
-    background-color: magenta;
+.check-reserve-middle-2 {
+    width: 500px;
 }
+.check-reserve-info-cont {
+    display: flex;
+    justify-content: space-between;
+}
+.check-reserve-info-left {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px
+}
+.check-reserve-info-right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.check-reserve-info-center {
+    border-top: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 15px
+}
+.check-reserve-info-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border-top: 1px solid gray;
+    border-bottom: 2px solid gray;
+}
+.check-reserve-info-bottom-2 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 150px;
+}
+.check-reserve-img {
+    width: 350px;
+    height: 450px;
+    padding-left: 40px;
+}
+.check-reserve-img-1 {
+    position: relative;
+    z-index: -1;
+    width:100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.check-reserve-img-2 {
+    width: 100%;
+    height: 50%;
+}
+.check-reserve-comment {
+    height: 300px;
+    width: 800px;
+}
+.check-reserve-comment-content {
+    width: 90%;
+    height: 100px;
+    background-color: darkkhaki;
+    opacity: 0.3;
+    border-radius: 30px;
+    margin-bottom: 25px;
+}
+.check-reserve-comment-letter {
+    padding: 15px;
+    font-size: 15px;
+}
+
 /* Tiles Footer에 관련된 CSS */
 /*footer {*/
 /*    position: fixed;*/
