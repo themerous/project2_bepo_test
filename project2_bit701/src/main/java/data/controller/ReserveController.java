@@ -53,16 +53,25 @@ public class ReserveController {
 	}
 	@PostMapping("/form/createReservation")
 	public String makeReservation(
-			@RequestBody ReserveDto dto,
-			Model model) {
+			@RequestParam String reserve_date,
+			@RequestParam String name,
+			@RequestParam int night,
+			@RequestParam String email,
+			@RequestParam String phone,
+			@RequestParam int pension_num) {
+		ReserveDto dto = ReserveDto.builder()
+			.reserve_date(reserve_date)
+			.name(name).email(email)
+			.phone(phone).night(night)
+			.pension_num(pension_num)
+			.build();
 		String resNum = UUID.randomUUID() + "";
 		dto.setReserve_num(resNum);
 		
 		service.makeReservation(dto);
-		model.addAttribute("name", dto.getName());
-		model.addAttribute("phone", dto.getPhone());
-		model.addAttribute("reserve_num", resNum);
 		
-		return "redirect:/reserve/check_reservation";
+		return "redirect:/reserve/check_reservation?name="
+				+dto.getName()+"&phone="+dto.getPhone()
+				+"&reserve_num="+resNum;
 	}
 }

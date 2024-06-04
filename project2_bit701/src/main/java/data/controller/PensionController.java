@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -23,6 +24,15 @@ public class PensionController {
 	@GetMapping("/search/region")
 	public String regionSearch() {
 		return "search/region";
+	}
+	@GetMapping("/search/detail")
+	public String searchDetail(
+			@RequestParam int num,
+			Model model) {
+		PensionDto dto = service.getPension(num);
+		model.addAttribute("dto", dto);
+		
+		return "search/detail";
 	}
 	
 	@ResponseBody

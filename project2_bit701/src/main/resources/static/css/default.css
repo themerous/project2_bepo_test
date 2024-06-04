@@ -24,6 +24,7 @@ header {
     min-width: 1000px;
     height: 50px;
     background-color: rgb(50, 50, 50);
+    z-index: 2;
 }
 
 /* Tiles Header에 관련된 CSS */
@@ -299,7 +300,7 @@ input::placeholder {
     font-weight: bold;
 }
 .region-container {
-    border: 1px solid black;
+    border-bottom: 1px solid black;
     padding-left: 30px;
     padding-top: 80px;
     padding-bottom: 30px;
@@ -318,21 +319,39 @@ input::placeholder {
 }
 #region-search-result {
     color: black;
-    margin-left: 30px;
-    margin-top: 40px;
-    margin-bottom: 25px;
+    min-width: 1000px;
+    width: 80%;
+    margin: 40px auto 25px;
 }
 .region-img {
     width: 500px;
     height: 350px;
 }
 .region-table-div {
+	width: 1000px;
+	min-width: 500px;
     padding-left: 10px;
 }
-.region-table-h4 {
+#region-search-result h4 {
     padding-bottom: 8px;
     font-weight: bold;
     color: saddlebrown;
+}
+.region-search-row {
+	display: flex;
+	margin-bottom: 40px;
+}
+.region-search-row-content {
+	display: flex; 
+	padding-left: 20px;
+	flex-direction: column;
+	justify-content: end;
+	width: 100%;
+}
+.search-textarea {
+	border: none; 
+	height: 100px; 
+	width: 100%; 
 }
 
 /* theme.jsp */

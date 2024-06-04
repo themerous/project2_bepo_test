@@ -16,13 +16,13 @@
 		            <p>Guest</p>
 		            <p>Nights</p>
 		            <p>Address</p>
-		            <p>Room</p>
+		            <p>Date</p>
 		        </div>
 		        <div class="check-reserve-info-right">
 		            <p>${reserve.name}</p>
 		            <p>${reserve.night}</p>
 		            <p>${pension.pension_addr}</p>
-		            <p>twin</p>
+		            <p>${reserve.reserve_date}</p>
 		        </div>
 		    </div>
 		    <div class="check-reserve-info-center">
@@ -31,10 +31,10 @@
 		    </div>
 		    <div class="check-reserve-info-center">
 		        <p class="check-reserve-bold">check-in</p>
-		        <p>2024-06-03   오후 3:00</p>
+		        <p>오후 3:00</p>
 		        <p class="check-reserve-bold"> >>> </p>
 		        <p class="check-reserve-bold">check-out</p>
-		        <p>2024-06-05   오전 11:00</p>
+		        <p>오전 11:00</p>
 		    </div>
 		    <div class="check-reserve-info-bottom">
 		        <div class="check-reserve-info-left">

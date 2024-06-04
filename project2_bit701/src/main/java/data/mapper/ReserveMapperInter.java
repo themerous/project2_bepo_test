@@ -13,6 +13,6 @@ public interface ReserveMapperInter {
 
 	@Insert("""
 			insert into reservation (name, email, phone, reserve_num, pension_num, reserve_date, night)
-			values (#{name}, #{email}, #{phone}, #{reserve_num}, #{pension_num}, #{reserve_date}, #{night})""")
+			values (#{name}, #{email}, #{phone}, #{reserve_num}, 1, #{reserve_date}, #{night})""")
 	public void makeReservation(ReserveDto dto);
 }
