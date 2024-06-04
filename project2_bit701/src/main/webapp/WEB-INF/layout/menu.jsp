@@ -10,7 +10,7 @@
 		</div>
 	</div>
 	<div class="menu-bar-content">
-		<a class="menu-bar-link">테 마 검 색</a>
+		<a class="menu-bar-link" href="/search/theme">테 마 검 색</a>
 		<div class="menu-bar-hidden">
 			테마정보가 들어갈 공간
 		</div>
