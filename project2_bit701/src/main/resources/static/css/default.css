@@ -129,7 +129,7 @@ input, button {
 .reservation-top {
     color: saddlebrown;
 }
-button {
+.submit {
     display: block;
     margin: 0 auto;
     width: 260px;
@@ -289,6 +289,54 @@ input::placeholder {
     padding: 15px;
     font-size: 15px;
 }
+
+/* region.jsp */
+
+.btn-region-search {
+    border-radius: 20px;
+    width: fit-content;
+    background-color: powderblue;
+    font-weight: bold;
+}
+.region-container {
+    border: 1px solid black;
+    padding-left: 30px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+.region-h6 {
+    padding-bottom: 20px;
+    color: saddlebrown;
+}
+.region-select {
+    width: 180px;
+    border-radius: 20px;
+    margin-right: 30px;
+}
+.region-selected {
+    text-align: center
+}
+#region-search-result {
+    color: black;
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+.region-img {
+    width: 500px;
+    height: 350px;
+}
+.region-table-div {
+    padding-left: 10px;
+}
+.region-table-h4 {
+    padding-bottom: 8px;
+    font-weight: bold;
+    color: saddlebrown;
+}
+
+
+
 
 /* Tiles Footer에 관련된 CSS */
 /*footer {*/
