@@ -13,27 +13,27 @@
 <div class="reservation-cont">
     <div class="reservation-form">
         <h2 class="reservation-top">Welcome back :)</h2><br>
-        <label>
-            <span>예약자명</span>
-            <input type="text" class="reservation_name" id="reservation_name" />
-        </label>
-        <label>
-            <span>전화번호</span>
-            <input type="text" id="reservation_ph" oninput="inputPh(this)" maxlength="13" placeholder=" '-' 없이 숫자만 입력해주세요"/>
-        </label>
-        <label>
-            <span>예약번호</span>
-            <input type="text" class="reservation_num" id="reservation_num" >
-        </label>
-        <button type="button" class="submit" onclick="location.href='./check_reservation'">조회하기</button>
-
+        <form action="./check_reservation" method="get">
+	        <label>
+	            <span>예약자명</span>
+	            <input type="text" name="name" class="reservation_name" id="reservation_name" />
+	        </label>
+	        <label>
+	            <span>전화번호</span>
+	            <input type="text" name="phone" id="reservation_ph" oninput="inputPh(this)" maxlength="13" placeholder=" '-' 없이 숫자만 입력해주세요"/>
+	        </label>
+	        <label>
+	            <span>예약번호</span>
+	            <input type="text" name="reserve_num" class="reservation_num" id="reservation_num" >
+	        </label>
+	        <button type="submit" class="submit">조회하기</button>
+		</form>
         <div class="reserve_img">
             <div class="img__text m--up">
-                <h2 >예약하기</h2>
+                <h2>예약하기</h2>
                 <p>새로운 숙소를 둘러보러 가실까요?</p>
                 <button type="button" class="gotoreserve-btn" onclick="location.href='../'">숙소 예약하러 가기</button>
             </div>
         </div>
     </div>
-
 </div>

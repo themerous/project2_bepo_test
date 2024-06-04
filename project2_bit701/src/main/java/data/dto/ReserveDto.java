@@ -22,4 +22,5 @@ public class ReserveDto {
 	private String reserve_num;
 	private int pension_num;
 	private String reserve_date;
+	private int night;
 }

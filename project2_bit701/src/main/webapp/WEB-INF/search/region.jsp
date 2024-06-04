@@ -17,11 +17,10 @@
     		 		url:"./regionsearch",
     		 		data:{"state":$("#state").val(), "city":$("#city").val()},
     		 		success:function(listDto){
-    		 			let s = "<div>";
+    		 			let s = "";
     			 		for(dto of listDto) {
     			 			s += "<div>" + dto.pension_info + "</div>";
     			 		}
-    			 		s += "</div>";
     			 		$("#region-search-result").html(s);
     		 		}
     	  		});

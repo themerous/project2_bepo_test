@@ -18,10 +18,12 @@ public class PensionService {
 		List<PensionDto> pensionList = inter.getAllPension();
 		return pensionList;
 	}
-	
 	public List<PensionDto> getRegionSearchResult(int region) {
 		List<PensionDto> pensionList = inter.getRegionSearchResult(region);
 		return pensionList;
+	}
+	public PensionDto getPension(int num) {
+		return inter.getPension(num);
 	}
 	
 	// RegionDto 값들 처리
