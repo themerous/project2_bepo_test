@@ -5,5 +5,5 @@
 <div class="menu-bar">
 	<div class="menu-bar-content">지 역 검 색</div>
 	<div class="menu-bar-content">테 마 검 색</div>
-	<div class="menu-bar-content">예 약 확 인</div>
+	<div class="menu-bar-content" ><a href="/reserve/check_reservatioin">예 약 확 인</a></div>
 </div>
