@@ -11,12 +11,12 @@ public class ReserveController {
 	@Autowired
 	private ReserveService service;
 
-//	@GetMapping("/reserve/reserve")
-//	public String move2reserve() {
-//		return "reserve/reserve";
-//	}
-	@GetMapping("/reserve/check_reservatioin")
-	public String move2checkreseve() {
+	@GetMapping("/reserve/reserve")
+	public String move2reserve() {
+		return "reserve/reserve";
+	}
+	@GetMapping("/reserve/check_reservation")
+	public String move2checkreserve() {
 		return "reserve/check_reservation";
 	}
 }
