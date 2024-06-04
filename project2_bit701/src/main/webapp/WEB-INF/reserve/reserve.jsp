@@ -8,10 +8,11 @@
             .replace(/[^0-9]/g, '')
             .replace(/(^02.{0}|^01.{1}|[0-9]{3,4})([0-9]{3,4})([0-9]{4})/g, "$1-$2-$3");
     }
+
 </script>
 <div class="reservation-cont">
     <div class="reservation-form">
-        <h2>Welcome back :)</h2><br>
+        <h2 class="reservation-top">Welcome back :)</h2><br>
         <label>
             <span>예약자명</span>
             <input type="text" class="reservation_name" id="reservation_name" />
@@ -24,7 +25,7 @@
             <span>예약번호</span>
             <input type="text" class="reservation_num" id="reservation_num" >
         </label>
-        <button type="button" class="submit">조회하기</button>
+        <button type="button" class="submit" onclick="location.href='./check_reservation'">조회하기</button>
 
         <div class="reserve_img">
             <div class="img__text m--up">
