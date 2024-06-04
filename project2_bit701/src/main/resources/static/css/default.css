@@ -4,6 +4,7 @@ body {
     width: 100%;
     height: 100%;
     margin: 0;
+	  min-width: 1000px;
 }
 
 * {
@@ -20,6 +21,7 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    min-width: 1000px;
     height: 50px;
     background-color: rgb(50, 50, 50);
 }
@@ -79,22 +81,25 @@ header {
 /* Tiles Main에 관련된 CSS */
 main {
     position: relative;
-    margin: 50px 0 200px;
+    margin: 50px 0 0;
     width: 100%;
 }
 .main-content {
 	position: relative;
-	height: 650px;	
-}
-#carouselExampleInterval {
+	background-color: black;
 	height: 100%;
 	z-index: -1;
 }
-.carousel-inner {
-	height: 100%;
+#carouselExampleInterval {
+	width: 50%;
+	height: 500px;
+	display: inline-block;
 }
-.center-bottom {
-	transform: translatey(-30%);
+.my-img-size {
+	width: 100%;
+	height: 500px;
+	background-size: cover;
+	background-repeat: none;
 }
 
 /*!* 민지 *!*/

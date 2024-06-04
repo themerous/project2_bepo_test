@@ -8,18 +8,14 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Getter
-@Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Alias("PensionDto")
+@Getter
+@Setter
+@Alias("RegionDto")
 @Builder
-public class PensionDto {
-	private int num;
-	private String pension_name;
-	private String pension_info;
-	private String room_type;
-	private String pension_addr;
-	private int region;
-	private String theme;
+public class RegionDto {
+	int num;
+	String state;
+	String city;
 }
