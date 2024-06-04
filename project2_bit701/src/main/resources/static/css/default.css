@@ -1,6 +1,10 @@
 body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     font-family: 'Jua';
     margin: 0;
+	color: white;
 }
 
 * {
@@ -9,54 +13,96 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 header {
-    position: relative;
-    margin: 0 auto;
-    padding: 10px 0;
-    max-width: 900px;
-    min-width: 480px;
-    height: 200px;
-    border: 1px solid black;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(50, 50, 50);
 }
 
 /* Tiles Header에 관련된 CSS */
 .header {
-    position: relative;
+    margin-left: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    width: auto;
+    font-size: 32px;
 }
 
 /* Tiles Menu에 관련된 CSS */
 .menu-bar {
-    position: absolute;
     display: flex;
     justify-content: space-between;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 50%;
+    z-index: 2;
 }
 .menu-bar-content {
     width: 33%;
     height: 50px;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
+    color: white;
+    font-size: 24px;
+}
+.menu-bar-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+.menu-bar-content:hover{
+    background-color: rgba(150, 150, 150, 0.3);
+}
+.menu-bar-content:hover .menu-bar-hidden{
+	display: block;
+}
+.menu-bar-hidden {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: rgba(50, 50, 50, 0.3);
+}
+.menu-bar-hidden:hover {
+	display: block;
 }
 
- /* Tiles Main에 관련된 CSS */
+/* Tiles Main에 관련된 CSS */
+main {
+    position: relative;
+    margin: 50px 0 200px;
+    width: 100%;
+}
+.main-content {
+	position: relative;
+	height: 650px;	
+}
+#carouselExampleInterval {
+	height: 100%;
+	z-index: -1;
+}
+.carousel-inner {
+	height: 100%;
+}
+.center-bottom {
+	transform: translatey(-30%);
+}
 
- /* Tiles Footer에 관련된 CSS */
+/* Tiles Footer에 관련된 CSS */
 footer {
     position: fixed;
     bottom: 0;
-    left: 0;
     width: 100%;
-    height: 200px;
-    background-color: rgb(109, 37, 37);
+    height: 150px;
+    background-color: rgb(50, 50, 50);
 }
