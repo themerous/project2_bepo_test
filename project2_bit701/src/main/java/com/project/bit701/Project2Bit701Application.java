@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan({"data.*", "com.project.bit701", "tiles.config"})
+@ComponentScan({"naver.ncloud", "data.*", "com.project.bit701", "tiles.config"})
 @MapperScan("data.mapper")
 public class Project2Bit701Application {
 

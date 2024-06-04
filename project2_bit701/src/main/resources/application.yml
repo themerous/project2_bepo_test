@@ -7,9 +7,9 @@ spring:
 #MySql Setting
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/project_2?serverTimezone=Asia/Seoul
-    username: root
-    password: 1234
+    url: jdbc:mysql://db-n9jkf-kr.vpc-pub-cdb.ntruss.com:3306/nolsam?serverTimezone=Asia/Seoul&useSSL=false&allowPublicKeyRetrieval=true
+    username: project
+    password: bitcamp!@#123
 #  datasource:
 #    driver-class-name: com.mysql.cj.jdbc.Driver
 #    url: jdbc:mysql://db-n8650-kr.vpc-pub-cdb.ntruss.com:3306/studydb?serverTimezone=Asia/Seoul
