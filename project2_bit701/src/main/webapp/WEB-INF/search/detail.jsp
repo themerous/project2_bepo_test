@@ -40,8 +40,8 @@
 		    </div>
 		</div>
 		<div class="check-reserve-img">
-		    <img class="check-reserve-img-1" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230310_256%2F1678419202171utUJz_JPEG%2F44.JPG">
-		    <img class="check-reserve-img-2" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230310_28%2F1678419198778mCzJh_JPEG%2F31.JPG">
+		    <img class="check-reserve-img-1" src="/pension/${dto.pension_name}/2.jpeg">
+		    <img class="check-reserve-img-2" src="/pension/${dto.pension_name}/3.jpeg">
 			<div style="margin-top: 30px; text-align: center;">
 				<button class="btn btn-outline-success" style="width: 70%; height: 80px;" type="button" onclick="location.href='/form/reserve?num=${dto.num}&penname=${dto.pension_name}'">예약하기</button>
 			</div>

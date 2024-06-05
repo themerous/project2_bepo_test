@@ -43,7 +43,7 @@
     		 		let s = '';
     			 	for(dto of listDto) {
     			 		s += '<div class="region-search-row">'
-						s += '<img class="region-img" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230310_271%2F1678419196944k2vcb_JPEG%2F2.JPG">';
+						s += '<div style="width: 500px; height: 350px;"><img class="region-img" src="/pension/' + dto.pension_name + '/1.jpeg"></div>';
 						s += '<div class="region-search-row-content"><div style="display: flex;"><h4>' + dto.pension_name 
 							+ '</h4><a style="color:black; margin-left: 10px;" href="./detail?num=' + dto.num + '">자세히 보기</a>' 
 							+ '</div><textarea readonly class="search-textarea">' 
