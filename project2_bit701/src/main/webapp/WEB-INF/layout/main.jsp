@@ -16,16 +16,16 @@
 			    <div style="background-image: url('/images/image5.jpeg')"
 			    class="carousel-item my-img-size" data-bs-interval="5000"></div>
 		  </div>
-		<div style="width: 25%">
-			<div style="background-color: green; width: 20px; height: 30px">dkdkdkdk</div>
-		</div>
+	</div>
+	<div style="width: 25%">
+		<div style="background-color: green; width: 20px; height: 30px">dkdkdkdk</div>
 	</div>
 </div>
 <div class="main-content">
+	<div style="width: 25%">
+		<div style="background-color: green; width: 20px; height: 30px">dkdkdkdk</div>
+	</div>
 	<div id="carouselExampleInterval2" class="carousel slide" data-bs-ride="carousel">
-		<div style="width: 25%">
-			<div style="background-color: green; width: 20px; height: 30px">dkdkdkdk</div>
-		</div>
 		<div class="carousel-inner">
 			<div style="background-image: url('/images/image.jpg')"
 				 class="carousel-item my-img-size active" data-bs-interval="5000"></div>

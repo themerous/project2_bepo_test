@@ -11,6 +11,7 @@
 		 	data: {"theme": theme},
 		 	success:function(listDto){
 		 		$("#region-search-result").html("");
+		 		$("#spacer").remove();
 		 		let s = '';
 			 	for(dto of listDto) {
 			 		s += '<div class="region-search-row">'
@@ -40,6 +41,7 @@
             <div class="theme-hashtag" style="background-color: silver" onclick="themeShowRoom('수영장')">#수영장</div>
         </div>
     </div>
+    <div id="spacer" style="height: 300px"></div>
     <div id="region-search-result">
 	</div>
 </div>

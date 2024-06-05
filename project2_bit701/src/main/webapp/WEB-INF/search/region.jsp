@@ -39,6 +39,7 @@
     		 	url:"./regionsearch",
     		 	data:{"state":$("#region").val(), "city":$("#city").val()},
     		 	success:function(listDto){
+    		 		$("#spacer").remove();
     		 		let s = '';
     			 	for(dto of listDto) {
     			 		s += '<div class="region-search-row">'
@@ -70,6 +71,6 @@
 </select>
 	<button type="button" class="btn-region-search" id="btn-region-search">search</button>
 </div>
-
+<div id="spacer" style="height: 400px;"></div>
 <div id="region-search-result">
 </div>
