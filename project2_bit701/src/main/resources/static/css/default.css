@@ -64,6 +64,7 @@ header {
     background-color: rgba(150, 150, 150, 0.3);
 }
 
+
 /* Tiles Main에 관련된 CSS */
 main {
     position: relative;
@@ -79,13 +80,13 @@ main {
     margin: 0 auto;
 }
 #carouselExampleInterval {
-	width: 75%;
+	width: 65%;
 	height: 600px;
 	display: flex;
 
 }
 #carouselExampleInterval2 {
-    width: 75%;
+    width: 65%;
     height: 600px;
     display: flex;
 
@@ -97,7 +98,16 @@ main {
 	background-repeat: none;
 }
 
-/*!* 민지 *!*/
+.main-text-box {
+    width: 35%;
+    background-color: aliceblue;
+}
+.main-text-p {
+    color: darkblue;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
 
 input, button {
     border: none;
