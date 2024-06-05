@@ -10,10 +10,12 @@ import data.dto.PensionDto;
 @Mapper
 public interface PensionMapperInter {
 	// Pension 테이블 사용
-	@Select("select * from pension order by num desc")
+	@Select("select * from pension order by num asc")
 	public List<PensionDto> getAllPension();
-	@Select("select * from pension where region = #{region}")
+	@Select("select * from pension where region = #{region} order by num asc")
 	public List<PensionDto> getRegionSearchResult(int region);
+	@Select("select * from pension where num=#{num}")
+	public PensionDto getPension(int num);
 	
 	// Region_Tag 테이블 사용
 	@Select("select num from region_tag where state=#{state} and city=#{city}")
