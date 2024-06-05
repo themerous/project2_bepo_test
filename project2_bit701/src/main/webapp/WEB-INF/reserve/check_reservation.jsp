@@ -5,7 +5,7 @@
 
 <div class="check-reserve-container">
 	<div class="check-reserve-top">
-	    <h4 class="check-reserve-bold">Reservation for - </h4>
+	    <h4 class="check-reserve-bold">Reservation</h4>
 	    <h7>Check your reservation</h7>
 	</div>
 	<div class="check-reserve-middle-1">
