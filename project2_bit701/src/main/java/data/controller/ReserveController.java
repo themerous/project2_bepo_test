@@ -1,5 +1,7 @@
 package data.controller;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +14,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
@@ -33,12 +34,8 @@ public class ReserveController {
 			@RequestParam String reserve_num,
 			Model model) {
 		ReserveDto dto = service.getReserve(name, phone, reserve_num);
-		PensionDto penDto = new PensionDto();
-		if(dto == null) {
-			
-		}else {
-			penDto = penService.getPension(dto.getPension_num());
-		}
+		PensionDto penDto = penService.getPension(dto.getPension_num());
+
 		model.addAttribute("reserve", dto);
 		model.addAttribute("pension", penDto);
 		
@@ -48,7 +45,12 @@ public class ReserveController {
 	
 	// making reservation
 	@GetMapping("/form/reserve")
-	public String toReservationForm() {
+	public String toReservationForm(
+			@RequestParam int num,
+			@RequestParam String penname,
+			Model model) {
+		model.addAttribute("pension_num", num);
+		model.addAttribute("pension_name", penname);
 		return "form/reserve";
 	}
 	@PostMapping("/form/createReservation")
@@ -69,9 +71,17 @@ public class ReserveController {
 		dto.setReserve_num(resNum);
 		
 		service.makeReservation(dto);
+		String bfencode = dto.getName();
+		String dtoname = "";
+		try {
+			dtoname = URLEncoder.encode(bfencode, "utf-8");
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		return "redirect:/reserve/check_reservation?name="
-				+dto.getName()+"&phone="+dto.getPhone()
+				+ dtoname +"&phone="+dto.getPhone()
 				+"&reserve_num="+resNum;
 	}
 }

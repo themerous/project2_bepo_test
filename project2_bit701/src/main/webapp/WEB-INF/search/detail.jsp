@@ -5,28 +5,13 @@
 
 <div class="check-reserve-container">
 	<div class="check-reserve-top">
-	    <h4 class="check-reserve-bold">Reservation</h4>
-	    <h7>Check your reservation</h7>
+	    <h4 class="check-reserve-bold">${dto.pension_name}</h4>
+	    <h7>${dto.pension_addr}</h7>
 	</div>
 	<div class="check-reserve-middle-1">
 		<div class="check-reserve-middle-2">
 		    <div class="check-reserve-info-cont">
-		        <div class="check-reserve-info-left">
-		            <p>Guest</p>
-		            <p>Nights</p>
-		            <p>Address</p>
-		            <p>Date</p>
-		        </div>
-		        <div class="check-reserve-info-right">
-		            <p>${reserve.name}</p>
-		            <p>${reserve.night}</p>
-		            <p>${pension.pension_addr}</p>
-		            <p>${reserve.reserve_date}</p>
-		        </div>
-		    </div>
-		    <div class="check-reserve-info-center">
-		        <p class="check-reserve-bold">Reservation number</p>
-		        <p>${reserve.reserve_num}</p>
+		        <p style="white-space: pre-line;">${dto.pension_info}</textarea>
 		    </div>
 		    <div class="check-reserve-info-center">
 		        <p class="check-reserve-bold">check-in</p>
@@ -57,6 +42,9 @@
 		<div class="check-reserve-img">
 		    <img class="check-reserve-img-1" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230310_256%2F1678419202171utUJz_JPEG%2F44.JPG">
 		    <img class="check-reserve-img-2" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230310_28%2F1678419198778mCzJh_JPEG%2F31.JPG">
+			<div style="margin-top: 30px; text-align: center;">
+				<button class="btn btn-outline-success" style="width: 70%; height: 80px;" type="button" onclick="location.href='/form/reserve?num=${dto.num}&penname=${dto.pension_name}'">예약하기</button>
+			</div>
 		</div>
 	</div>
     <div class="check-reserve-comment">
