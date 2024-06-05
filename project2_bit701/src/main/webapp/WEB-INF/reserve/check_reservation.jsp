@@ -55,8 +55,8 @@
 		    </div>
 		</div>
 		<div class="check-reserve-img">
-		    <img class="check-reserve-img-1" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230310_256%2F1678419202171utUJz_JPEG%2F44.JPG">
-		    <img class="check-reserve-img-2" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230310_28%2F1678419198778mCzJh_JPEG%2F31.JPG">
+		    <img class="check-reserve-img-1" src="/pension/${pension.pension_name}/2.jpeg">
+		    <img class="check-reserve-img-2" src="/pension/${pension.pension_name}/3.jpeg">
 		</div>
 	</div>
     <div class="check-reserve-comment">
