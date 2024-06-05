@@ -5,7 +5,7 @@
 
 <div class="check-reserve-container">
 	<div class="check-reserve-top">
-	    <h4 class="check-reserve-bold">Reservation</h4>
+	    <h4 class="check-reserve-bold">Reservation for - </h4>
 	    <h7>Check your reservation</h7>
 	</div>
 	<div class="check-reserve-middle-1">
@@ -14,12 +14,14 @@
 		        <div class="check-reserve-info-left">
 		            <p>Guest</p>
 		            <p>Nights</p>
+		            <p>Pension</p>
 		            <p>Address</p>
 		            <p>Date</p>
 		        </div>
 		        <div class="check-reserve-info-right">
 		            <p>${reserve.name}</p>
 		            <p>${reserve.night}</p>
+		            <p>${pension.pension_name}</p>
 		            <p>${pension.pension_addr}</p>
 		            <p>${reserve.reserve_date}</p>
 		        </div>
