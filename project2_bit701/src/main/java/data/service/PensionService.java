@@ -22,6 +22,9 @@ public class PensionService {
 		List<PensionDto> pensionList = inter.getRegionSearchResult(region);
 		return pensionList;
 	}
+	public List<PensionDto> getThemeSearchResult(String theme_tag) {
+		return inter.getThemeSearchResult(theme_tag);
+	}
 	public PensionDto getPension(int num) {
 		return inter.getPension(num);
 	}
@@ -32,5 +35,10 @@ public class PensionService {
 	}
 	public List<Integer> getAllRegionNum(String state) {
 		return inter.getAllRegionNum(state);
+	}
+	
+	// Theme 처리
+	public String getThemeNum(String theme) {
+		return inter.getThemeNum(theme);
 	}
 }

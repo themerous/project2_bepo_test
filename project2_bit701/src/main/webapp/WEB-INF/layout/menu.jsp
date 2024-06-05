@@ -5,15 +5,9 @@
 <div class="menu-bar">
 	<div class="menu-bar-content">
 		<a class="menu-bar-link" href="/search/region">지 역 검 색</a>
-		<div class="menu-bar-hidden">
-			지역정보가 들어갈 공간
-		</div>
 	</div>
 	<div class="menu-bar-content">
 		<a class="menu-bar-link" href="/search/theme">테 마 검 색</a>
-		<div class="menu-bar-hidden">
-			테마정보가 들어갈 공간
-		</div>
 	</div>
 	<div class="menu-bar-content">
 		<a class="menu-bar-link" href="/reserve/reserve">예 약 정 보</a>

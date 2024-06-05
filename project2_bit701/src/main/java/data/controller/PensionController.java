@@ -60,4 +60,10 @@ public class PensionController {
 	public String themeSearch() {
 		return "search/theme";
 	}
+	@ResponseBody
+	@PostMapping("/search/themesearch")
+	public List<PensionDto> getThemeSearchResult(
+			@RequestParam(defaultValue = "") String theme) {
+		return service.getThemeSearchResult(service.getThemeNum(theme));
+	}
 }

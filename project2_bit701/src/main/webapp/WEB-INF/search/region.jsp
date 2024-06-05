@@ -47,9 +47,9 @@
 							+ '</h4><a style="color:black; margin-left: 10px;" href="./detail?num=' + dto.num + '">자세히 보기</a>' 
 							+ '</div><textarea readonly class="search-textarea">' 
 							+ dto.pension_info + '</textarea></div></div>';
-    					}
-    					$("#region-search-result").html(s);
-    		 		}
+    				}
+    				$("#region-search-result").html(s);
+    		 	}
     	  	});
 		});
 	});
