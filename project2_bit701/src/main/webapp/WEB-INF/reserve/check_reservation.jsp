@@ -57,8 +57,8 @@
 		    </div>
 		</div>
 		<div class="check-reserve-img">
-		    <img class="check-reserve-img-1" src="/pension/${pension.pension_name}/2.jpeg">
-		    <img class="check-reserve-img-2" src="/pension/${pension.pension_name}/3.jpeg">
+		    <img class="check-reserve-img-1" src="https://kr.object.ncloudstorage.com/bitcamp701-129/pension/${pension.pension_name}/2.jpeg">
+		    <img class="check-reserve-img-2" src="https://kr.object.ncloudstorage.com/bitcamp701-129/pension/${pension.pension_name}/3.jpeg">
 		</div>
 	</div>
     <div class="check-reserve-comment">

@@ -30,18 +30,18 @@
 		            <p>$19.99</p>
 		        </div>
 		    </div>
-		    <div class="check-reserve-info-bottom-2">
+		    <!--  <div class="check-reserve-info-bottom-2">
 		        <div class="check-reserve-info-left">
 		            <p class="check-reserve-bold">Total</p>
 		        </div>
 		        <div class="check-reserve-info-right">
 		            <p class="check-reserve-bold">$29,017.99</p>
 		        </div>
-		    </div>
+		    </div> -->
 		</div>
 		<div class="check-reserve-img">
-		    <img class="check-reserve-img-1" src="/pension/${dto.pension_name}/2.jpeg">
-		    <img class="check-reserve-img-2" src="/pension/${dto.pension_name}/3.jpeg">
+		    <img class="check-reserve-img-1" src="https://kr.object.ncloudstorage.com/bitcamp701-129/pension/${dto.pension_name}/2.jpeg">
+		    <img class="check-reserve-img-2" src="https://kr.object.ncloudstorage.com/bitcamp701-129/pension/${dto.pension_name}/3.jpeg">
 			<div style="margin-top: 30px; text-align: center;">
 				<button class="btn btn-outline-success" style="width: 70%; height: 80px;" type="button" onclick="location.href='/form/reserve?num=${dto.num}&penname=${dto.pension_name}'">예약하기</button>
 			</div>

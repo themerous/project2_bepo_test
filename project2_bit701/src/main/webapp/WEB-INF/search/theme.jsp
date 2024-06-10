@@ -15,7 +15,7 @@
 		 		let s = '';
 			 	for(dto of listDto) {
 			 		s += '<div class="region-search-row">'
-					s += '<div style="width: 500px; height: 350px;"><img class="region-img" src="/pension/' + dto.pension_name + '/1.jpeg"></div>';
+					s += '<div style="width: 500px; height: 350px;"><img class="region-img" src="https://kr.object.ncloudstorage.com/bitcamp701-129/pension/' + dto.pension_name + '/1.jpeg"></div>';
 					s += '<div class="region-search-row-content"><div style="display: flex;"><h4>' + dto.pension_name 
 						+ '</h4><a style="color:black; margin-left: 10px;" href="./detail?num=' + dto.num + '">자세히 보기</a>' 
 						+ '</div><textarea readonly class="search-textarea">' 
